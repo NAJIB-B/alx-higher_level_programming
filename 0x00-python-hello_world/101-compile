@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Compiling main.py ...
+echo $PYFILE | python3 -c "import marshal; code = compile(open('$PYFILE').read(), '$PYFILE', 'exec'); marshal.dump(code, open('${PYFILE%.py}.pyc', 'wb'))" 
