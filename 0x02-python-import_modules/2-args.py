@@ -17,4 +17,4 @@ if __name__ == "__main__":
             if i == 0:
                 continue
             else:
-                print("{}: {}".format(i, argv[i]))  
+                print("{}: {}".format(i, argv[i])) 
