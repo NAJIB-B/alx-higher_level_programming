@@ -3,6 +3,9 @@
 def print_sorted_dictionary(a_dictionary):
     new_list = []
 
-    for k, v in a_dictionary:
+    for k, v in a_dictionary.items():
         new_list.append(k)
-    return sorted(new_list)
+    new_list = sorted(new_list)
+
+    for i in new_list:
+        print("{}: {}".format(i, a_dictionary[i]))
