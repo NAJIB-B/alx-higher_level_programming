@@ -18,6 +18,7 @@ listint_t *add_node_front(listint_t *real_head, listint_t *prev, listint_t *curr
 
 	if (prev == NULL)
 	{
+		printf("yap it came here");
 		temp = real_head;
 		real_head = new_list;
 		new_list->next = temp;	
