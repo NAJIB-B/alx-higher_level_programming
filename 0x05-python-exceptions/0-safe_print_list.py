@@ -4,12 +4,12 @@ def safe_print_list(my_list=[], x=0):
         return (0)
     j = 0
     try:
-        while j <= x:
-            print(my_list[j], end="")
+        for i in range(x):
+            print(my_list[i], end="")
             j += 1
     except IndexError:
         print("")
-        return (i)
+        return (j)
 
     print("")
-    return (i)
+    return (j)
