@@ -4,8 +4,8 @@ def safe_print_list(my_list=[], x=0):
         return (0)
     j = 0
     try:
-        for i in range(x):
-            print(my_list[i], end="")
+        while j <= x:
+            print(my_list[j], end="")
             j += 1
     except IndexError:
         print("")
