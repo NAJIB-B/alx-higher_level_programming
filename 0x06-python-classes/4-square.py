@@ -9,15 +9,15 @@ class Square:
     """A square class"""
 
     def __init__(self, size=0):
-        self.__size = size
+        self.size = size
 
     def area(self):
-        return self.__size * self.__size
+        return self.size * self.size
 
     @property
     def size(self):
-        return __size
-    
+        return self.__size
+
     @size.setter
     def size(self, size):
         if not isinstance(size, int):
