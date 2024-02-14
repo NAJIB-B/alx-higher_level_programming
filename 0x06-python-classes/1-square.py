@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" This module defines a square class 
-    with a private instance attribute 
+""" This module defines a square class
+    with a private instance attribute
     size
     """
 
