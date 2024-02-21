@@ -15,25 +15,20 @@ def matrix_divided(matrix, div):
         returns a new matrix with the divided values
     """
     if div is None or matrix is None:
-        raise TypeError("matrix must be a matrix
-                        (list of lists) of integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     if not isinstance(matrix, list):
-        raise TypeError("matrix must be a matrix
-                        (list of lists) of integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for i in matrix:
         if not isinstance(i, list):
-            raise TypeError("matrix must be a matrix
-                            (list of lists) of integers/floats")
+            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
         for j in i:
             if not (isinstance(j, int) or isinstance(j, float)):
-                raise TypeError("matrix must be a matrix
-                                (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     matrix_len = len(matrix[0])
 
     for i in matrix:
         if len(i) != matrix_len:
-            raise TypeError("Each row of the
-                            matrix must have the same size")
+            raise TypeError("Each row of the matrix must have the same size")
 
     if not (isinstance(div, int) or isinstance(div, float)):
         raise TypeError("div must be a number")
