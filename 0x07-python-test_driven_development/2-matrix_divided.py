@@ -14,7 +14,7 @@ def matrix_divided(matrix, div):
     Return:
         returns a new matrix with the divided values
     """
-    if not div or not matrix:
+    if div == None or matrix == None:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
