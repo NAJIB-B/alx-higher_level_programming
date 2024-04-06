@@ -1,0 +1,45 @@
+===========================
+How to use 0-add_integer.py
+==========================
+
+0-add_integer.py has only one function which adds two
+numbers
+
+Numbers
+=======
+
+::
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(5, 10)
+	15
+
+	>>> add_integer(2)
+	100
+
+	>>> add_integer(-8)
+	90
+
+	>>> add_integer(-1, 1)
+	0
+
+	>>> add_integer(9.6, 1.2)
+	10
+
+Non-numbers
+===========
+
+::
+
+	>>> add_integer("me", 9)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+	
+	>>> add_integer(9, "me")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+	
