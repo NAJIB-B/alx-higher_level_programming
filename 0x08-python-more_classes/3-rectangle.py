@@ -54,12 +54,9 @@ class Rectangle:
             return ("")
         result = []
         for i in range(self.__height):
-            row = ""
             for j in range(self.__width):
-                row += "#"
-            result.append(row)
-            result.append("\n")
+                result.append("#")
+            if i != (self.__height - 1):
+                result.append("\n")
             row = ""
         return ("".join(result))
-
-
