@@ -5,7 +5,11 @@
 class MyInt(int):
 
     def __eq__(self, others):
-        """Custom inverted equallity"""
+        """Custom inverted equallity
+        
+        Args:
+            others (int): value to be compared with our instance
+        """
 
         if isinstance(others, int):
             return super().__ne__(others)
@@ -13,7 +17,11 @@ class MyInt(int):
             return True
 
         def __ne__(self, others):
-            """Custom inverted not equal"""
+            """Custom inverted equallity
+        
+            Args:
+                others (int): value to be compared with our instance
+            """
 
             if isinstance(others, int):
                 return super().__eq__(others)
