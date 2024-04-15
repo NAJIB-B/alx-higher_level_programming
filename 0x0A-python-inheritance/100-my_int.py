@@ -6,7 +6,7 @@ class MyInt(int):
 
     def __eq__(self, others):
         """Custom inverted equallity
-        
+
         Args:
             others (int): value to be compared with our instance
         """
@@ -18,7 +18,7 @@ class MyInt(int):
 
         def __ne__(self, others):
             """Custom inverted equallity
-        
+ 
             Args:
                 others (int): value to be compared with our instance
             """
