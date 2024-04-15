@@ -2,5 +2,5 @@
 """Defines a base geometery class"""
 
 
-class BaseGeometry():
+class BaseGeometry:
     pass
