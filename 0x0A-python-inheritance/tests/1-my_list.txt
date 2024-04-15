@@ -5,6 +5,9 @@ how to use my_list
 my list has only one function which is to sort
 a list
 
+For positive numbers
+====================
+
 ::
 
 	>>> MyList = __import__('1-my_list').MyList
@@ -23,3 +26,21 @@ a list
 
 	>>> print(newList)
 	[1, 2, 4, 6, 8, 9]
+
+For negetive numbers
+====================
+
+::
+
+	>>> list2 = MyList()
+	>>> list2.append(-3)
+	>>> list2.append(-9)
+	>>> list2.append(-4)
+	>>> list2.append(-8)
+	>>> list2.append(-2)
+	>>> list2.append(-1)
+	>>> print(list2)
+	[-3, -9, -4, -8, -2, -1]
+
+	>>> list2.print_sorted()
+	[-9, -8, -4, -3, -2, -1]
