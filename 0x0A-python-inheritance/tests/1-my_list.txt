@@ -1,0 +1,25 @@
+=======================
+how to use my_list
+======================
+
+my list has only one function which is to sort
+a list
+
+::
+
+	>>> MyList = __import__('1-my_list').MyList
+	>>> newList = MyList()
+	>>> newList.append(9)
+	>>> newList.append(6)
+	>>> newList.append(8)
+	>>> newList.append(1)
+	>>> newList.append(2)
+	>>> newList.append(4)
+	>>> print(newList)
+	[9, 6, 8, 1, 2, 4]
+
+	>>> newList.print_sorted()
+	[1, 2, 4, 6, 8, 9]
+
+	>>> print(newList)
+	[1, 2, 4, 6, 8, 9]
