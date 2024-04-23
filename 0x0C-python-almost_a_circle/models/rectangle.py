@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Defines a rectangle model"""
 
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -91,7 +91,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """Changes the printable version of rectangle"""
-        string = "[Rectangle] ({}) {}/{} - {}/{}"
+        string = "[Rectangle] ({}) {}/{} - {}/{}"\
         .format(self.id, self.x, self.y, self.width, self.height)
         return string
 
