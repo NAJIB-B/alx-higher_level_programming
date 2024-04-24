@@ -17,9 +17,11 @@ class Square(Rectangle):
     def __str__(self):
         """Changes the printable version of rectangle"""
 
-        string = "[Square] ({}) {}/{} - {}"
-        .format(self.id, self.x, self.y, self.width)
-        return string
+        string = "[Square] ({}) {}/".format(self.id, self.x)
+        string2 = "{} - {}".format(self.width)
+        total_string = string + string2
+
+        return total_string
 
     @property
     def size(self):
