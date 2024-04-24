@@ -1,14 +1,23 @@
 #!/usr/bin/python3
 """Defines a rectangle model"""
 
-from model.base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
-    """Represents a rectangle class"""
+    """Represents a rectangle class that inherits from
+    a the Base class"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initializes an instance of a Rectangle"""
+        """Initializes an instance of a Rectangle
+        
+        Args:
+            width: compulsory argument
+            height: compulsory argument
+            x: optional argument
+            y: optional argument
+            id: optional argument
+        """
 
         super().__init__(id)
         self.width = width
