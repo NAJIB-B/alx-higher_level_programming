@@ -10,7 +10,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializes an instance of a Rectangle
-      
+
         Args:
             width: compulsory argument
             height: compulsory argument
@@ -100,9 +100,12 @@ class Rectangle(Base):
 
     def __str__(self):
         """Changes the printable version of rectangle"""
-        string = "[Rectangle] ({}) {}/{} - {}/{}"
-        .format(self.id, self.x, self.y, self.width, self.height)
-        return string
+        string = "[Rectangle] ({}) {}/".format(self.id, self.x)
+        string2 = "{} {}/{}".format(self.y, self.width, self.height)
+
+        final_string = string + string2
+
+        return final_string
 
     def update(self, *args, **kwargs):
         """Updates the attribute for the rectangle class"""
