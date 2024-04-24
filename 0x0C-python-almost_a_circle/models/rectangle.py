@@ -10,7 +10,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializes an instance of a Rectangle
-
+      
         Args:
             width: compulsory argument
             height: compulsory argument
