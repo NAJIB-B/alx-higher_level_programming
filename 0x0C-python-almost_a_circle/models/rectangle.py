@@ -101,7 +101,7 @@ class Rectangle(Base):
     def __str__(self):
         """Changes the printable version of rectangle"""
         string = "[Rectangle] ({}) {}/".format(self.id, self.x)
-        string2 = "{} {}/{}".format(self.y, self.width, self.height)
+        string2 = "{} - {}/{}".format(self.y, self.width, self.height)
 
         final_string = string + string2
 
